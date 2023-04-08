@@ -44,4 +44,36 @@
     background-color: #ccc;
     cursor: pointer;
   }
-  
+
+    /* adjust the size of the calculator container */
+    #calculator {
+    width: 320px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    }
+
+    /* adjust the size of the calculator keys */
+    button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    }
+
+    /* adjust the size of the display screen */
+    #screen {
+    width: 260px;
+    height: 60px;
+    font-size: 36px;
+    text-align: right;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
