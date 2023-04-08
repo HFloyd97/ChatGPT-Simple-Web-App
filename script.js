@@ -1,7 +1,9 @@
-const darkModeButton = document.getElementById("darkModeButton");
-const body = document.body;
+const submitButton = document.getElementById("submitButton");
+const nameInput = document.getElementById("nameInput");
+const greeting = document.getElementById("greeting");
 
-darkModeButton.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
+submitButton.addEventListener("click", () => {
+  const name = nameInput.value;
+  greeting.textContent = `Hello, ${name}!`;
 });
 
