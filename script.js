@@ -1,21 +1,12 @@
-let result = document.getElementById('result');
-
-function addToResult(value) {
-  result.value += value;
+function insert(num) {
+    document.getElementById('result').value += num;
 }
 
-function clearResult() {
-  result.value = '';
+function clearDisplay() {
+    document.getElementById('result').value = "";
 }
 
-function backspace() {
-  result.value = result.value.slice(0, -1);
-}
-
-function calculateResult() {
-  try {
-    result.value = eval(result.value);
-  } catch (error) {
-    result.value = 'Error';
-  }
+function calculate() {
+    var result = eval(document.getElementById('result').value);
+    document.getElementById('result').value = result;
 }
