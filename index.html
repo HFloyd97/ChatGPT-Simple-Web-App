@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Calculator</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>2-Player Pong Game</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<div class="calculator">
-		<div class="display">
-			<input type="text" id="result" readonly>
-		</div>
-		<div class="keys">
-			<button class="operator" onclick="insert('+')">+</button>
-			<button class="operator" onclick="insert('-')">-</button>
-			<button class="operator" onclick="insert('*')">*</button>
-			<button class="operator" onclick="insert('/')">/</button>
-			<button onclick="insert('7')">7</button>
-			<button onclick="insert('8')">8</button>
-			<button onclick="insert('9')">9</button>
-			<button onclick="insert('4')">4</button>
-			<button onclick="insert('5')">5</button>
-			<button onclick="insert('6')">6</button>
-			<button onclick="insert('1')">1</button>
-			<button onclick="insert('2')">2</button>
-			<button onclick="insert('3')">3</button>
-			<button onclick="insert('0')">0</button>
-			<button onclick="insert('.')">.</button>
-			<button class="clear" onclick="clearDisplay()">AC</button>
-			<button class="equals" onclick="calculate()">=</button>
-		</div>
+	<div id="canvas-container">
+		<h1>2-Player Pong Game</h1>
+		<canvas id="canvas"></canvas>
+		<div id="scoreboard">Player 1: 0 / Player 2: 0</div>
+		<div id="winning-score">Playing to: 3</div>
+		<div id="instructions">Move your paddle with your mouse.</div>
+		<div id="credits">Made with love by John Doe.</div>
 	</div>
-
-	<script src="script.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
-
