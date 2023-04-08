@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="calculator">
-      <div class="display">
-        <input type="text" id="result" disabled>
-      </div>
-      <div class="buttons">
-        <button onclick="clearResult()">C</button>
-        <button onclick="backspace()">←</button>
-        <button onclick="addToResult('/')">÷</button>
-        <button onclick="addToResult('*')">x</button>
-        <button onclick="addToResult('7')">7</button>
-        <button onclick="addToResult('8')">8</button>
-        <button onclick="addToResult('9')">9</button>
-        <button onclick="addToResult('-')">-</button>
-        <button onclick="addToResult('4')">4</button>
-        <button onclick="addToResult('5')">5</button>
-        <button onclick="addToResult('6')">6</button>
-        <button onclick="addToResult('+')">+</button>
-        <button onclick="addToResult('1')">1</button>
-        <button onclick="addToResult('2')">2</button>
-        <button onclick="addToResult('3')">3</button>
-        <button onclick="calculateResult()">=</button>
-        <button onclick="addToResult('0')">0</button>
-        <button onclick="addToResult('.')">.</button>
-      </div>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="display">
+		</div>
+		<div class="keys">
+			<button onclick="addToDisplay('1')">1</button>
+			<button onclick="addToDisplay('2')">2</button>
+			<button onclick="addToDisplay('3')">3</button>
+			<button class="operator" onclick="addToDisplay('/')">/</button>
+			<button class="clear" onclick="clearDisplay()">C</button>
+			<button onclick="addToDisplay('4')">4</button>
+			<button onclick="addToDisplay('5')">5</button>
+			<button onclick="addToDisplay('6')">6</button>
+			<button class="operator" onclick="addToDisplay('*')">*</button>
+			<button class="clear" onclick="clearDisplay()">Clear (AC)</button>
+			<button onclick="addToDisplay('7')">7</button>
+			<button onclick="addToDisplay('8')">8</button>
+			<button onclick="addToDisplay('9')">9</button>
+			<button class="operator" onclick="addToDisplay('-')">-</button>
+			<button onclick="addToDisplay('0')">0</button>
+			<button onclick="addToDisplay('.')">.</button>
+			<button class="operator" onclick="addToDisplay('=')">=</button>
+			<button class="operator" onclick="addToDisplay('+')">+</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
 </html>

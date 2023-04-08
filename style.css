@@ -1,79 +1,58 @@
-/* adjust the size and layout of the calculator container */
-#calculator {
-    width: 320px;
-    height: 500px;
-    margin: 0 auto;
-    background-color: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  /* adjust the size of the calculator keys */
-  button {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-    background-color: #fff;
-    color: #444;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #eee;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-  }
-  
-  button:active {
-    transform: translateY(2px);
-    box-shadow: none;
-  }
-  
-  /* adjust the size of the display screen */
-  #screen {
-    width: 260px;
-    height: 60px;
-    font-size: 36px;
-    text-align: right;
-    padding: 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  /* adjust the size of the 0 and . keys */
-  button.zero, button.dot {
-    width: 130px;
-  }
-  
-  /* adjust the layout of the calculator rows */
-  .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .row:last-child {
-    margin-top: auto;
-  }
-  
-  /* adjust the size and layout of the clear button */
-  button.clear {
-    font-size: 18px;
-    color: #fff;
-    background-color: #ff3333;
-  }
-  
-  button.clear:hover {
-    background-color: #cc0000;
-  }
-  
+.calculator {
+	margin: 0 auto;
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+	padding: 10px;
+	text-align: right;
+	background-color: #f2f2f2;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.display input[type="text"] {
+	width: 100%;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	font-size: 24px;
+}
+
+.keys {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 5px;
+	padding: 10px;
+	background-color: #f2f2f2;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+button {
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: #d9d9d9;
+	color: #333;
+}
+
+.operator {
+	background-color: #f0ad4e;
+	color: #fff;
+}
+
+.clear {
+	background-color: #f2dede;
+	color: #a94442;
+	grid-column: 2 / span 2;
+}
+
+button:hover {
+	background-color: #b3b3b3;
+}
